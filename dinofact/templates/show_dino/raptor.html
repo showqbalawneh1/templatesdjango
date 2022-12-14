@@ -1,0 +1,23 @@
+
+{% load dinotags %}
+
+hi hi hi hih hi 
+
+{% block content  %}
+
+<p> {{dianosaur|first_letter}}  </p>
+
+<p>
+    Mosasaurus-> letter_count :{{"Mosasaurus"|letter_count:"s"}}
+</p>
+<p>
+    chomp chomp chomp -> mute(like comment in html ) :{% mute "chomp chomp chomp" %}
+  </p>
+  <p>
+  use make ul {% make_ul dinosaurs %}
+</p>
+
+<p>
+    {% dino_list "Other Big Lizards" %}
+</p>
+{% endblock content  %}
